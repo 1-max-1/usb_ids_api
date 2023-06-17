@@ -1,0 +1,23 @@
+{
+  "name": "usb_ids_api",
+  "version": "1.0.0",
+  "description": "A service that periodically grabs USB ID's from linux-usb.org, converts them to JSON format then hosts the file on Github Pages for the world to access.",
+  "main": "index.js",
+  "scripts": {
+    "build_json": "node index.js"
+  },
+  "keywords": [
+    "usb",
+    "usb id",
+    "automation",
+    "api",
+    "json",
+    "github pages"
+  ],
+  "author": "Max Hosking",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0"
+  },
+  "type": "module"
+}
