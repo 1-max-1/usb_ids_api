@@ -2,8 +2,8 @@ name: Download USB data and publish to Github Pages
 
 on:
   schedule:
-    # Every Sunday and Wednesday at 1 p.m.
-    - cron: '0 13 * * 0,3'
+    # At 1:00pm on the 1st and 15th
+    - cron: '0 13 1,15 * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -15,7 +15,6 @@ permissions:
   id-token: write
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: true
